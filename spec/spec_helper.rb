@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require "jekyll" # TODO why require this here like jekyll-maps, instead of inside verifcation_file_generator.rb directly like in jekyll-feed?
-require "jekyll/google_search_console_verification_file"
+require "jekyll-google_search_console_verification_file"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

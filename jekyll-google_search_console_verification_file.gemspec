@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/jekyll/google_search_console_verification_file/version"
+require_relative "lib/jekyll-google_search_console_verification_file/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-google_search_console_verification_file"
