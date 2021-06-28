@@ -2,7 +2,6 @@
 
 source "https://rubygems.org"
 
-# TODO Specify your gem's dependencies in jekyll-google_search_console_verification_file.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
