@@ -9,3 +9,7 @@
 /tmp/
 # rspec failure tracking
 .rspec_status
+
+# Contrary to ruby apps, ruby gems should not check in Gemfile.lock.
+# Reference: https://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
+Gemfile.lock
