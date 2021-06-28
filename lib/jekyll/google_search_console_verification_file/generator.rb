@@ -44,8 +44,7 @@ module Jekyll
       end
 
       # Get path of the template file.
-      # TODO where put this file? What is this relative to?
-      def source_path(file = "verification_file_template.html")
+      def source_path(file = "google_search_console_verification_file/template.html")
         File.expand_path "../#{file}", __dir__
       end
 
