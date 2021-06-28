@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# TODO should require here, or in spec/spec_helper.rb ?
 require "jekyll"
 
 # TODO why does this plugin run even if it's not eabled in _config.yml???
