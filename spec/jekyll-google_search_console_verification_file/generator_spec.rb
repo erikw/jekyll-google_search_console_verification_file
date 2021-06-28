@@ -41,12 +41,7 @@ RSpec.describe Jekyll::GoogleSearchConsoleVerificationFile::Generator do
   context "when a site is incorrectly configured (missing site.google_search_console.verification_file_code)" do
     after(:all) { remove_dest_dir }
 
-    let(:site) do
-      site = make_site({ "source" => source_dir("normal"),
-                         "google_search_console" => {} })
-      site.process
-      site
-    end
+    let(:site) { make_site({ "source" => source_dir("normal"), "google_search_console" => {} }) }
 
     it "generating the site will raise an error" do
       expect { site.process }.to raise_error(ArgumentError)

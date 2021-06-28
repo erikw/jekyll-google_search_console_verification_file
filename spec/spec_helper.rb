@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "simplecov" # Must be before any application code.
+
 require "jekyll"
 require "jekyll-google_search_console_verification_file"
 
