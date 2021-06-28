@@ -55,7 +55,6 @@ module Jekyll
 
       # Construct a file object from a template with content that can be added to generated pages
       def verification_file
-        # TODO First appeared in jekyll v3.7.0 => set rspec version from this.
         page = PageWithoutAFile.new(@site, __dir__, "", destination_path)
         page.content = File.read(source_path)
         page.data["layout"] = nil
