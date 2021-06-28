@@ -5,7 +5,7 @@
 
 module Jekyll
   module GoogleSearchConsoleVerificationFile
-    class GSCVerificationFileGenerator < Jekyll::Generator
+    class Generator < Jekyll::Generator
       safe true
       priority :lowest
 
