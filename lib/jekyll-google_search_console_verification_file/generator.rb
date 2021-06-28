@@ -2,7 +2,6 @@
 
 require "jekyll"
 
-# TODO why does this plugin run even if it's not eabled in _config.yml???
 module Jekyll
   module GoogleSearchConsoleVerificationFile
     class Generator < Jekyll::Generator

@@ -51,7 +51,7 @@ Note that if you do place a verification file in the root of the source tree, th
    google47733b3288357e4.html
    ```
 
-## Development
+# Development
 The structure of this plugin was inspired by [https://ayastreb.me/writing-a-jekyll-plugin/](https://ayastreb.me/writing-a-jekyll-plugin/), the plugin jekyll-sitemap and the [Bundler Gem tutorial](https://bundler.io/guides/creating_gem.html).
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -59,10 +59,14 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 
+## Local development
 TODO document local testing with git method at https://rossta.net/blog/how-to-specify-local-ruby-gems-in-your-gemfile.html
 
-## Contributing
+## Releasing
+TODO start with base at https://ayastreb.me/writing-a-jekyll-plugin/ put document exact commands for each step to use.
+
+# Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/erikw/jekyll-google_search_console_verification_file.
 
-## License
+# License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
