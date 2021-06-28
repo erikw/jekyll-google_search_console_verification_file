@@ -24,12 +24,12 @@ Note that if you do place a verification file in the root of the source tree, th
 
 # Installation
 1. Add this gem to your Jekyll site's Gemfile
+   - Simply with `$ bundle add jekyll-google-search-console-verification-file` when standing in the Jekyll project
+   - Or manually by adding to `Gemfile`
    ```ruby
-   group :jekyll_plugins do
-     gem 'jekyll-google-search-console-verification-file' TODO version
-   end
+     gem 'jekyll-google-search-console-verification-file'
    ```
-   and run `$ bundle install`.
+   and then running `$ bundle install`.
 1. In your site's `_config.yml`, enable the plugin:
    ```yml
    plugins:
