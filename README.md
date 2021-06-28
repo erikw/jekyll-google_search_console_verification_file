@@ -60,7 +60,19 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 
 ## Local development
-TODO document local testing with git method at https://rossta.net/blog/how-to-specify-local-ruby-gems-in-your-gemfile.html
+Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://rossta.net/blog/how-to-specify-local-ruby-gems-in-your-gemfile.html), these are the steps needed to build a jekyll site with a local clone of this plugin for local testing.
+
+1. Clone this repo to your machine, say at `~/src/jekyll-google_search_console_verification_file`
+1. In your Jekyll project's `Gemfile`:
+   - Remove the `gem 'jekyll-google_search_console_verification_file'` part
+   - Add instead `gem 'jekyll-google_search_console_verification_file', github: 'erikw/jekyll-google_search_console_verification_file', branch: 'main'`
+1. Configure bundler to use a local path for this gem in this project:
+   - `$ bundle config --local local.jekyll-google_search_console_verification_file ~/src/jekyll-google_search_console_verification_file`
+1. Update the project: `$ bundle install`
+1. Now the project will build with the local clone of this plugin when issuing e.g. `bundle exec jekyll build`
+1. When you're done:
+  - Remove the local override with: `$ bundle config --delete local.jekyll-google_search_console_verification_file`
+  - Optionally restore the original gem include in `Gemfile` or keep building from a branch in the github repo.
 
 ## Releasing
 TODO start with base at https://ayastreb.me/writing-a-jekyll-plugin/ put document exact commands for each step to use.
