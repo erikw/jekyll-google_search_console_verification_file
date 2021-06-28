@@ -64,6 +64,7 @@ TODO document local testing with git method at https://rossta.net/blog/how-to-sp
 
 ## Releasing
 TODO start with base at https://ayastreb.me/writing-a-jekyll-plugin/ put document exact commands for each step to use.
+TODO Create GitHub Releases, as that way I can get download stats? https://www.toolsqa.com/git/github-releases/ rubygems list download stats already though
 
 # Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/erikw/jekyll-google_search_console_verification_file.
