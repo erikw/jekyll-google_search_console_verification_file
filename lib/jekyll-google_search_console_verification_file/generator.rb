@@ -4,6 +4,7 @@ require "jekyll"
 
 module Jekyll
   module GoogleSearchConsoleVerificationFile
+    # Generator for the verification file.
     class Generator < Jekyll::Generator
       safe true
       priority :lowest
@@ -17,24 +18,25 @@ module Jekyll
       private
 
       # Configuration keys in _config.yml
-      CONF_NS = 'google_search_console'
-      CONF_CODE = 'verification_file_code'
+      CONF_NS = "google_search_console"
+      CONF_CODE = "verification_file_code"
       # The 'progname' argument to the logger class.
-      LOG_TAG = 'Google Search Console Verification File Generator:'
+      LOG_TAG = "Google Search Console Verification File Generator:"
 
       # Get the verification code from _config.yml
       def verification_code
-        argMsg = "#{LOG_TAG} #{CONF_NS}.#{CONF_CODE} must be set in _config.html"
-        raise ArgumentError,  argMsg unless @site.config[CONF_NS]&.[](CONF_CODE)
+        err_msg = "#{LOG_TAG} #{CONF_NS}.#{CONF_CODE} must be set in _config.html"
+        raise ArgumentError, err_msg unless @site.config[CONF_NS]&.[](CONF_CODE)
+
         @site.config[CONF_NS][CONF_CODE]
       end
 
-
       # Check if a GSC verification file already exist in the source that will be put in the root of the generated site.
       def a_verification_file_exist?
-        file_pattern = %r{\/google.+\.html?}
+        file_pattern = %r{/google.+\.html?}
         exists = @site.static_files.any? { |p| p.url =~ file_pattern }
-        Jekyll.logger.warn LOG_TAG, "Found a verification file in source tree matching /#{file_pattern.source}/; not generating one..." if exists
+        warn_msg = "Found a verification file in source tree matching /#{file_pattern.source}/; not generating one..."
+        Jekyll.logger.warn LOG_TAG, warn_msg if exists
         exists
       end
 
