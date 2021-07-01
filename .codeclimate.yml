@@ -3,22 +3,21 @@
 
 version: "2"
 plugins:
-  duplication:
-    enabled: true
-    config:
-      languages:
-      - ruby
-      - javascript
   rubocop:
     enabled: true
   fixme:
     enabled: true
   eslint:
     enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
 ratings:
   paths:
-  - "**.js"
   - "**.rb"
+  - "**.js"
 exclude_paths:
 - script/
-- spec/
