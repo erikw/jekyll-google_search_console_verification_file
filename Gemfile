@@ -15,7 +15,7 @@ end
 
 group :test do
   gem "rspec", "~> 3.0"
-  gem "rubocop", "1.12"	# Support for ruby 2.4 was dropped after v1.12.
+  gem "rubocop", "~> 1.18"
   gem 'rubocop-rake', "~> 0.6", require: false
   gem 'rubocop-rspec', "~> 2.4", require: false
   gem 'simplecov', "~> 0.21", require: false, group: :test

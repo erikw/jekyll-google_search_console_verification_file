@@ -6,12 +6,15 @@ require:
   - rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 3.0
   Include:
   - lib/**/*.rb
   - spec/**/*.rb
 
 Gemspec/DateAssignment:
+  Enabled: true
+
+Layout/LineEndStringConcatenationIndentation:
   Enabled: true
 
 Lint/AmbiguousAssignment:
@@ -25,6 +28,8 @@ Lint/DuplicateRegexpCharacterClassElement:
 Lint/EmptyBlock:
   Enabled: true
 Lint/EmptyClass:
+  Enabled: true
+Lint/EmptyInPattern:
   Enabled: true
 Lint/LambdaWithoutLiteralBlock:
   Enabled: true
@@ -63,6 +68,8 @@ Naming/FileName:
   Enabled: false
   Exclude:
   - lib/jekyll-google_search_console_verification_file.rb
+Naming/InclusiveLanguage:
+  Enabled: true
 
 Style/ArgumentsForwarding:
   Enabled: true
@@ -78,9 +85,15 @@ Style/HashExcept:
   Enabled: true
 Style/IfWithBooleanLiteralBranches:
   Enabled: true
+Style/InPatternThen:
+  Enabled: true
+Style/MultilineInPatternThen:
+  Enabled: true
 Style/NegatedIfElseCondition:
   Enabled: true
 Style/NilLambda:
+  Enabled: true
+Style/QuotedSymbols:
   Enabled: true
 Style/RedundantArgument:
   Enabled: true
@@ -94,7 +107,6 @@ Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 Style/SwapValues:
   Enabled: true
-
 
 
 # Reference: https://github.com/rubocop/rubocop-rake/blob/master/config/default.yml
