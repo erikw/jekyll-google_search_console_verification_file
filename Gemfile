@@ -3,7 +3,7 @@
 # Put require=false on gem's that we don't need to import in code (cli exec only)
 
 source "https://rubygems.org"
-#ruby "3.0.1" # set in .ruby-version instead
+ruby "3.0.1" # set in .ruby-version instead
 
 # Include dependencies from the .gemspec
 gemspec
