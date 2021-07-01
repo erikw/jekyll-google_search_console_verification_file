@@ -1,11 +1,18 @@
-/.bundle/
-/.yardoc
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
+# Contrary to ruby apps, ruby gems should not check in Gemfile.lock.
+# Reference: https://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
+Gemfile.lock
 
-# rspec failure tracking
+# Bundle local config
+.bundle/
+
+# Package gem from ($rake install)
+pkg/
+
+# simplecov
+coverage/
+
+# rspec
 .rspec_status
+spec/dest/
+spec/fixtures/.jekyll-cache/
+spec/reports/

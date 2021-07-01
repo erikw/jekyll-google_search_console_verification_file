@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/jekyll/google_search_console_verification_file/version"
+require_relative "lib/jekyll-google_search_console_verification_file/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-google_search_console_verification_file"
@@ -8,17 +8,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Erik Westrup"]
   spec.email         = ["erik.westrup@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Generate a Google Search Console verification file from your _config.yml e.g. google47733b3288357e4.html to the root of your Jekyll site."
+  spec.description   = "This is a very simple plugin that will generate a Google Search Console (GSC from here) verification file to your _site/ directory in a Jekyll project. This file is used by GSC to verify that you own the site and looks for example like https://erikw.me/googlef47733b3288357e4.html."
+  spec.homepage      = "https://github.com/erikw/jekyll-google_search_console_verification_file/tree/dev"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/erikw/jekyll-google_search_console_verification_file/tree/dev"
+  spec.metadata["changelog_uri"] = "https://github.com/erikw/jekyll-google_search_console_verification_file/blob/dev/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -29,9 +27,5 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
-
-  # For more information and examples about making a new gem, checkout our
-  # guide at: https://bundler.io/guides/creating_gem.html
+  spec.add_dependency "jekyll", ">= 3.7", "< 5.0"
 end
