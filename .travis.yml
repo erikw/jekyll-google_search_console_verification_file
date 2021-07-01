@@ -1,5 +1,14 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
 language: ruby
-cache: bundler
 rvm:
   - 3.0.1
+cache: bundler
 before_install: gem install bundler -v 2.2.18
+#install: bundle install
+before_script:
+  - bundle exec codeclimate-test-reporter before-build
+#script: bundle exec rake
+after_script:
+  - bundle exec codeclimate-test-reporter
