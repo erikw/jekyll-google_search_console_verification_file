@@ -5,5 +5,5 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-    ignore:
-      - dependency-name: "rubocop"
+    #ignore:
+      #- dependency-name: "rubocop"
