@@ -3,5 +3,6 @@ set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
+rvm install ruby-3.0.1
 gem install bundler -v 2.2.18
 bundle install
