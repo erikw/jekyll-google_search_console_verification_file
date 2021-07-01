@@ -1,3 +1,4 @@
+# Travis build cycle: https://docs.travis-ci.com/user/job-lifecycle
 # Codeclimate setup: https://docs.codeclimate.com/docs/travis-ci-test-coverage
 
 env:
@@ -10,7 +11,9 @@ cache: bundler
 before_install: gem install bundler -v 2.2.18
 #install: bundle install # Default
 before_script:
-  - bundle exec codeclimate-test-reporter before-build
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 #script: bundle exec rake # Default
 after_script:
-  - bundle exec codeclimate-test-reporter
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

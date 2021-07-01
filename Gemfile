@@ -17,7 +17,6 @@ group :development, :test do
 end
 
 group :test do
-  gem "codeclimate-test-reporter", require: false
   gem "rspec", "~> 3.0"
   gem "rubocop", "~> 1.18", require: false
   gem "rubocop-rake", "~> 0.6", require: false
