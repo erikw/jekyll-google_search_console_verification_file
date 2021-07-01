@@ -91,9 +91,21 @@ To use the [travis cli client](https://github.com/travis-ci/travis.rb) (installe
    - going to [github.com/settings/tokens](https://github.com/settings/tokens)
    - create a new token named `travis-cli`
    - Set the scopes `repo`, `read:org`, `user:email` according to the [docs](https://docs.travis-ci.com/user/github-oauth-scopes).
+1. Set travis.com as the default so we don't need to add `--pro` to most commands
+   ```console
+   $ bundle exec travis endpoint --set-default --api-endpoint https://api.travis-ci.com/
+   ```
 1. Login with the cli client
    ```console
-   bundle exec travis login --pro --github-token $GITHUB_TOKEN
+   $ bundle exec travis login --github-token $GITHUB_TOKEN
+   ```
+1. Now the cli client can be used (might need `--pro` to use travis.com)
+   ```console
+   $ bundle exec travis lint
+   $ bundle exec travis accounts
+   $ bundle exec travis status
+   $ bundle exec travis branches
+   $ bundle exec travis monitor
    ```
 
 # Contributing
