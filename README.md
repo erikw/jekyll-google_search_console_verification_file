@@ -1,4 +1,4 @@
-# Jekyll Google Search Console Verification File Generator Plugin
+# Jekyll Google Search Console Verification File Generator Plugin - UNRELEASED
 TODO add build status badge and gem versions badge like https://github.com/ayastreb/jekyll-maps
 
 This is a very simple plugin that will generate a Google Search Console (GSC from here) [verification file](https://support.google.com/webmasters/answer/9008080?hl=en) to your `_site/` directory in a Jekyll project. This file is used by GSC to verify that you own the site and looks for example like my [googlef47733b3288357e4.html](https://erikw.me/googlef47733b3288357e4.html).
@@ -44,7 +44,7 @@ Note that if you do place a verification file in the root of the source tree, th
    google_search_console:
      verification_file_code: 47733b3288357e4
    ```
-1. Just build your site and verify that the verification file now exist!
+1. Now just build your site and verify that the verification file now exist!
    ```bash
    $ bundle exec jekyll build
    $ ls _site/ | grep "google.*\.html"
