@@ -4,6 +4,7 @@
 # - ruby defaults: https://docs.travis-ci.com/user/languages/ruby/
 # Codeclimate setup: https://docs.codeclimate.com/docs/travis-ci-test-coverage
 
+version: ~> 1.0
 env:
   global:
     - CC_TEST_REPORTER_ID=9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
