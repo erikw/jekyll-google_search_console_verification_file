@@ -85,6 +85,17 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
 TODO start with base at https://ayastreb.me/writing-a-jekyll-plugin/ put document exact commands for each step to use.
 TODO Create GitHub Releases, as that way I can get download stats? https://www.toolsqa.com/git/github-releases/ rubygems list download stats already though
 
+## Travis
+To use the [travis cli client](https://github.com/travis-ci/travis.rb) (installed from `Gemfile`):
+1. Get a GitHub OAuth token by
+   - going to [github.com/settings/tokens](https://github.com/settings/tokens)
+   - create a new token named `travis-cli`
+   - Set the scopes `repo`, `read:org`, `user:email` according to the [docs](https://docs.travis-ci.com/user/github-oauth-scopes).
+1. Login with the cli client
+   ```console
+   bundle exec travis login --pro --github-token $GITHUB_TOKEN
+   ```
+
 # Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/erikw/jekyll-google_search_console_verification_file.
 

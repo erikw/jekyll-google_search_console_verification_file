@@ -14,6 +14,7 @@ gemspec
 # However there's an argument for using gemspec too: https://bundler.io/guides/creating_gem.html#testing-our-gem
 group :development, :test do
   gem "rake", "~> 13.0", require: false
+  gem "travis", "~> 1.0", require: false
 end
 
 group :test do
