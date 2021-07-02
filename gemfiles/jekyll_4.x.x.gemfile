@@ -2,7 +2,6 @@
 
 source "https://rubygems.org"
 
-gemspec path: "../"
 gem "jekyll", "~> 4.0"
 
 group :development, :test do
@@ -19,3 +18,4 @@ group :test do
   gem "simplecov", "~> 0.21"
 end
 
+gemspec path: "../"
