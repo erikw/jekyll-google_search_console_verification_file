@@ -111,13 +111,13 @@ Style/SwapValues:
 
 # Reference: https://github.com/rubocop/rubocop-rake/blob/master/config/default.yml
 Rake:
-  Enabled: false
+  Enabled: true
 
 # Reference:
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 # https://github.com/rubocop/rubocop-rspec/blob/master/config/default.yml
 RSpec:
-  Enabled: false
+  Enabled: true
 RSpec/FilePath:
  # Disable to match structure of lib/. For jekyll plugin inclusion convention features, not having lib/jekyll/sth.rb but lib/jekyll-sth.rb
   Enabled: false
