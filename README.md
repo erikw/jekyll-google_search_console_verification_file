@@ -95,6 +95,10 @@ TODO Create GitHub Releases, as that way I can get download stats? https://www.t
       $ BUNDLE_GEMFILE=gemfiles/jekyll_4.x.x.gemfile bundle exec rake spec
       $ bundle exec appraisal jekyll-4.x.x rake spec
       ```
+   - To run `rake spec` for all gemfiles:
+      ```console
+      $ bundle exec appraisal rake spec
+      ```
    - To generate new/updated gemfiles from `Appraisals`
       ```console
       $ bundle exec appraisal install
