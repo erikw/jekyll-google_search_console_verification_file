@@ -16,10 +16,10 @@ language: ruby
 # - ruby (via rvm)
 # - jekyll (via gefile)
 rvm:
-  - 2.7.0
+  #- 2.7.0
   - 3.0.1
 gemfile:
-  - gemfiles/jekyll_3.7.x.gemfile
+  #- gemfiles/jekyll_3.7.x.gemfile
   - gemfiles/jekyll_4.x.x.gemfile
 cache: bundler
 before_install: gem install bundler -v 2.2.18
