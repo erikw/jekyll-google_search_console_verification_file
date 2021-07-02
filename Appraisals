@@ -3,5 +3,5 @@ appraise "jekyll-3.7.x" do
 end
 
 appraise "jekyll-4.x.x" do
-  gem "jekyll", "< 5.0"
+  gem "jekyll", "~> 4.0"
 end
