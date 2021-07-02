@@ -10,6 +10,10 @@ env:
     - CC_TEST_REPORTER_ID=9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
 language: ruby
 #rvm: 3.0.1 # Is read from .ruby-version
+# Build matrix: run with one ruby version from each support major version range defined in .gemspec.
+rvm:
+  - 2.4.0
+  - 3.0.1
 cache: bundler
 before_install: gem install bundler -v 2.2.18
 #install: bundle install # Default

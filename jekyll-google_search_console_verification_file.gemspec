@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "This is a very simple plugin that will generate a Google Search Console (GSC from here) verification file to your _site/ directory in a Jekyll project. This file is used by GSC to verify that you own the site and looks for example like https://erikw.me/googlef47733b3288357e4.html."
   spec.homepage      = "https://github.com/erikw/jekyll-google_search_console_verification_file/tree/dev"
   spec.license       = "MIT"
-  spec.required_ruby_version = "~> 3.0"
+  spec.required_ruby_version = ">= 2.7", "< 4"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/erikw/jekyll-google_search_console_verification_file/tree/dev"
