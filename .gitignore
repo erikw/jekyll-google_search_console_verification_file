@@ -12,7 +12,7 @@ pkg/
 coverage/
 
 # rspec
+.jekyll-cache/
 .rspec_status
 spec/dest/
-spec/fixtures/.jekyll-cache/
 spec/reports/
