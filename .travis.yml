@@ -12,7 +12,7 @@ language: ruby
 #rvm: 3.0.1 # Is read from .ruby-version
 # Build matrix: run with one ruby version from each support major version range defined in .gemspec.
 rvm:
-  - 2.4.0
+  - 2.7.0
   - 3.0.1
 cache: bundler
 before_install: gem install bundler -v 2.2.18
