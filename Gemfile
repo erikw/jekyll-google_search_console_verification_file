@@ -14,6 +14,7 @@ gemspec
 group :development, :test do
   gem "rake", "~> 13.0", require: false
   gem "travis", "~> 1.0", require: false
+  gem "appraisal", "~> 2.4", require: false
 end
 
 group :test do

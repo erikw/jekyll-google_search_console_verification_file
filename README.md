@@ -87,6 +87,20 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
 TODO start with base at https://ayastreb.me/writing-a-jekyll-plugin/ put document exact commands for each step to use.
 TODO Create GitHub Releases, as that way I can get download stats? https://www.toolsqa.com/git/github-releases/ rubygems list download stats already though
 
+## Multi-versions
+* For ruby, just use RVM to switch between supported ruby version specified in `.gemspec`.
+* To run with different jekyll versions, [Appraisal](https://github.com/thoughtbot/appraisal) is used with [`Appraisals`](Appraisals) to generate different [`gemfiles/`](gemfiles/)
+   - To use a specific Gemfile, run like
+      ```console
+      $ BUNDLE_GEMFILE=gemfiles/jekyll_4.x.x.gemfile bundle exec rake spec
+      $ bundle exec appraisal jekyll-4.x.x rake spec
+      ```
+   - To generate new/updated gemfiles from `Appraisals`
+      ```console
+      $ bundle exec appraisal install
+      $ bundle exec appraisal generate --travis
+      ```
+
 ## Travis
 To use the [travis cli client](https://github.com/travis-ci/travis.rb) (installed from `Gemfile`):
 1. Get a GitHub OAuth token by
