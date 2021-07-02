@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.0"
+gem "panolint"
 
 group :development, :test do
   gem "rake", "~> 13.0", require: false
