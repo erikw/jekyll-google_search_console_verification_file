@@ -42,7 +42,7 @@ jobs:
     env: CACHE_NAME=rvm-3.0.1-jekyll-4.x.x
 
 
-cache: bundler
+#cache: bundler
 before_install: gem install bundler -v 2.2.18
 #install: bundle install # Default
 before_script:
