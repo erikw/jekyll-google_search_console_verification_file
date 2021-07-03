@@ -24,18 +24,18 @@ language: ruby
 
 jobs:
   include:
-  - name: rvm-2.7.0-jekyll-3.7.x
-    rvm: 2.7.0
-    gemfile: gemfiles/jekyll_3.7.x.gemfile
-    env: CACHE_NAME=rvm-2.7.0-jekyll-3.7.x
-  - name: rvm-2.7.0-jekyll-4.x.x
-    rvm: 2.7.0
-    gemfile: gemfiles/jekyll_4.x.x.gemfile
-    env: CACHE_NAME=rvm-2.7.0-jekyll-4.x.x
-  - name: rvm-3.0.1-jekyll-3.7.x
-    rvm: 3.0.1
-    gemfile: gemfiles/jekyll_3.7.x.gemfile
-    env: CACHE_NAME=rvm-3.0.1-jekyll-3.7.x
+  #- name: rvm-2.7.0-jekyll-3.7.x
+    #rvm: 2.7.0
+    #gemfile: gemfiles/jekyll_3.7.x.gemfile
+    #env: CACHE_NAME=rvm-2.7.0-jekyll-3.7.x
+  #- name: rvm-2.7.0-jekyll-4.x.x
+    #rvm: 2.7.0
+    #gemfile: gemfiles/jekyll_4.x.x.gemfile
+    #env: CACHE_NAME=rvm-2.7.0-jekyll-4.x.x
+  #- name: rvm-3.0.1-jekyll-3.7.x
+    #rvm: 3.0.1
+    #gemfile: gemfiles/jekyll_3.7.x.gemfile
+    #env: CACHE_NAME=rvm-3.0.1-jekyll-3.7.x
   - name: rvm-3.0.1-jekyll-4.x.x
     rvm: 3.0.1
     gemfile: gemfiles/jekyll_4.x.x.gemfile
@@ -50,5 +50,6 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 #script: bundle exec rake # Default
+script: bundle exec rubocop -d
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
