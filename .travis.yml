@@ -10,6 +10,7 @@ version: ~> 1.0
 env:
   global:
     - CC_TEST_REPORTER_ID=9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
+    - BUNDLE_GEMFILE=gemfiles/Gemfile
 language: ruby
 #rvm: 3.0.1 # Is read from .ruby-version
 # Buid matrix (2x2) with one version from each supported major version in range defined in .gemspec for
@@ -29,6 +30,6 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 #script: bundle exec rake # Default
-script: BUNDLE_GEMFILE=gemfiles/Gemfile bundle exec rake
+#script: BUNDLE_GEMFILE=gemfiles/Gemfile bundle exec rake
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
