@@ -15,33 +15,12 @@ language: ruby
 # Buid matrix (2x2) with one version from each supported major version in range defined in .gemspec for
 # - ruby (via RVM)
 # - jekyll (via Gemfile)
-#rvm:
-  #- 2.7.0
-  #- 3.0.1
-#gemfile:
-  #- gemfiles/jekyll_3.7.x.gemfile
-  #- gemfiles/jekyll_4.x.x.gemfile
-
-jobs:
-  include:
-  #- name: rvm-2.7.0-jekyll-3.7.x
-    #rvm: 2.7.0
-    #gemfile: gemfiles/jekyll_3.7.x.gemfile
-    #env: CACHE_NAME=rvm-2.7.0-jekyll-3.7.x
-  #- name: rvm-2.7.0-jekyll-4.x.x
-    #rvm: 2.7.0
-    #gemfile: gemfiles/jekyll_4.x.x.gemfile
-    #env: CACHE_NAME=rvm-2.7.0-jekyll-4.x.x
-  #- name: rvm-3.0.1-jekyll-3.7.x
-    #rvm: 3.0.1
-    #gemfile: gemfiles/jekyll_3.7.x.gemfile
-    #env: CACHE_NAME=rvm-3.0.1-jekyll-3.7.x
-  - name: rvm-3.0.1-jekyll-4.x.x
-    rvm: 3.0.1
-    gemfile: gemfiles/jekyll_4.x.x.gemfile
-    env: CACHE_NAME=rvm-3.0.1-jekyll-4.x.x
-
-
+rvm:
+  - 2.7.0
+  - 3.0.1
+gemfile:
+  - gemfiles/jekyll_3.7.x.gemfile
+  - gemfiles/jekyll_4.x.x.gemfile
 cache: bundler
 before_install: gem install bundler -v 2.2.18
 #install: bundle install # Default
@@ -50,6 +29,5 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 #script: bundle exec rake # Default
-script: bundle exec rubocop -d
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
