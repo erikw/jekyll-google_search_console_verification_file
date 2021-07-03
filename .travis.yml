@@ -21,8 +21,8 @@ rvm:
   - 3.0.1
 gemfile:
   #- gemfiles/jekyll_3.7.x.gemfile
-  - gemfiles/jekyll_4.x.x.gemfile
-  #- gemfiles/Gemfile2
+  #- gemfiles/jekyll_4.x.x.gemfile
+  - gemfiles/Gemfile2
 cache: bundler
 before_install: gem install bundler -v 2.2.18
 install: bundle install # Default
