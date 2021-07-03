@@ -11,10 +11,7 @@ env:
   global:
     - CC_TEST_REPORTER_ID=9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
 language: ruby
-#rvm: 3.0.1 # Is read from .ruby-version
-# Buid matrix (2x2) with one version from each supported major version in range defined in .gemspec for
-# - ruby (via RVM)
-# - jekyll (via Gemfile)
+# Buid matrix (rvm x gemfile = 2x2) with one version from each supported major version in range defined in .gemspec for
 rvm:
   - 2.7.0
   - 3.0.1
