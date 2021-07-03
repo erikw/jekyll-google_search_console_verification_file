@@ -10,6 +10,8 @@ AllCops:
   Include:
   - lib/**/*.rb
   - spec/**/*.rb
+  Exclude:
+  - vendor/**/*.rb # or vendor/bundle/**/*
 
 Gemspec/DateAssignment:
   Enabled: true
