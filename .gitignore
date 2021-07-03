@@ -3,6 +3,7 @@
 Gemfile.lock
 # Same for Appraisals generated Gemfiles
 gemfiles/*gemfile.lock
+gemfiles/Gemfile*.lock
 
 # Bundle local config
 .bundle/

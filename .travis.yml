@@ -10,28 +10,24 @@ version: ~> 1.0
 env:
   global:
     - CC_TEST_REPORTER_ID=9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
-    #- BUNDLE_GEMFILE=Gemfile2
 language: ruby
 #rvm: 3.0.1 # Is read from .ruby-version
 # Buid matrix (2x2) with one version from each supported major version in range defined in .gemspec for
 # - ruby (via RVM)
 # - jekyll (via Gemfile)
 rvm:
-  #- 2.7.0
+  - 2.7.0
   - 3.0.1
 gemfile:
-  #- gemfiles/jekyll_3.7.x.gemfile
-  #- gemfiles/jekyll_4.x.x.gemfile
-  - gemfiles/Gemfile_jekyll_4.x.x
-  #- gemfiles/Gemfile2
+  - gemfiles/Gemfile.jekyll_3.7.x
+  - gemfiles/Gemfile.jekyll_4.x.x
 cache: bundler
 before_install: gem install bundler -v 2.2.18
-install: bundle install # Default
+#install: bundle install # Default
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 #script: bundle exec rake # Default
-#script: BUNDLE_GEMFILE=gemfiles/Gemfile bundle exec rake
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

@@ -4,7 +4,8 @@
 
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.0"
+# Include dependencies from the .gemspec
+gemspec
 
 # Development dependencies
 # Should rather be here than in the .gemspec
@@ -23,6 +24,3 @@ group :test do
   gem "rubocop-rspec", "~> 2.4", require: false
   gem "simplecov", "~> 0.21"
 end
-
-# Include dependencies from the .gemspec
-gemspec path: "../"
