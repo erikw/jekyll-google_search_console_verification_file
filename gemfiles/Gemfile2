@@ -4,6 +4,7 @@
 
 source "https://rubygems.org"
 
+gem "jekyll", "~> 4.0"
 
 # Development dependencies
 # Should rather be here than in the .gemspec
