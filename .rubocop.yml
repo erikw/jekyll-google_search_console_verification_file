@@ -11,9 +11,9 @@ AllCops:
   - lib/**/*.rb
   - spec/**/*.rb
   Exclude:
-  # When building on Travis, this path will have many .rubocop.yml files which are pulled in an causes error, as it references gems which are not installed.
+  # Travis: during build there will be a lot of rubocop config files in this pat which will cause build failure as the refer to gems which are not installed by this project.
   # See https://github.com/rubocop/rubocop/issues/9832
-  - gemfiles/vendor/bundle/*
+  - gemfiles/vendor/bundle/**/*
 
 Gemspec/DateAssignment:
   Enabled: true
