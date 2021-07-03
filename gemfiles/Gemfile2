@@ -4,8 +4,6 @@
 
 source "https://rubygems.org"
 
-# Include dependencies from the .gemspec
-gemspec path: "../"
 
 # Development dependencies
 # Should rather be here than in the .gemspec
@@ -24,3 +22,6 @@ group :test do
   gem "rubocop-rspec", "~> 2.4", require: false
   gem "simplecov", "~> 0.21"
 end
+
+# Include dependencies from the .gemspec
+gemspec path: "../"
