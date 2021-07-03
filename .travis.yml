@@ -21,7 +21,7 @@ rvm:
 gemfile:
   #- gemfiles/Gemfile.jekyll_3.7.x
   - gemfiles/Gemfile.jekyll_4.x.x
-cache: bundler
+#cache: bundler # TODO this is problem??
 before_install: gem install bundler -v 2.2.18
 #install: bundle install # Default
 before_script:
