@@ -11,7 +11,9 @@ AllCops:
   - lib/**/*.rb
   - spec/**/*.rb
   Exclude:
-  - vendor/**/*.rb # or vendor/bundle/**/*
+  - vendor/**/*.rb
+  - vendor/bundle/**/*
+  - gemfiles/vendor/bundle/**/*
 
 Gemspec/DateAssignment:
   Enabled: true
