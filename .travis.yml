@@ -14,15 +14,15 @@ env:
 language: ruby
 #rvm: 3.0.1 # Is read from .ruby-version
 # Buid matrix (2x2) with one version from each supported major version in range defined in .gemspec for
-# - ruby (via rvm)
-# - jekyll (via gefile)
+# - ruby (via RVM)
+# - jekyll (via Gemfile)
 rvm:
   #- 2.7.0
   - 3.0.1
 gemfile:
   #- gemfiles/jekyll_3.7.x.gemfile
   #- gemfiles/jekyll_4.x.x.gemfile
-  - Gemfile2
+  - gemfiles/Gemfile2
 cache: bundler
 before_install: gem install bundler -v 2.2.18
 install: bundle install # Default

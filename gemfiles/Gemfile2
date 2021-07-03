@@ -5,7 +5,7 @@
 source "https://rubygems.org"
 
 # Include dependencies from the .gemspec
-gemspec
+gemspec path: "../"
 
 # Development dependencies
 # Should rather be here than in the .gemspec
