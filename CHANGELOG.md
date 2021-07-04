@@ -1,3 +1,6 @@
+## [1.0.0] - 2021-07-04
+- No changes from `v0.2.0` but just bumping to final first major release version!
+
 ## [0.2.0] - 2021-07-04
 - Using the `gem-release` gem extension to make release process easier.
 
