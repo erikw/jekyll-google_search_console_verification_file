@@ -84,8 +84,7 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
   - Optionally restore the original gem include in `Gemfile` or keep building from a branch in the github repo.
 
 ## Releasing
-TODO start with base at https://ayastreb.me/writing-a-jekyll-plugin/ put document exact commands for each step to use.
-TODO Create GitHub Releases, as that way I can get download stats? https://www.toolsqa.com/git/github-releases/ rubygems list download stats already though
+
 
 ## Multi-versions
 * For ruby, just use RVM to switch between supported ruby version specified in `.gemspec`.
