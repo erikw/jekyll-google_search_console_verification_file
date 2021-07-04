@@ -101,7 +101,7 @@ $ bundle exec rake release
 ## Using gem-release gem extension
 Using [gem-release](https://github.com/svenfuchs/gem-release):
 ```console
-$ gem bump --push --version minor
+$ gem bump --push --sign --version minor
 ```
 
 ## Multi-versions
