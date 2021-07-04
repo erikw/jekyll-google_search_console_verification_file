@@ -98,7 +98,7 @@ $ gem install pkg/jekyll-google_search_console_verification_file-$ver.gem
 $ bundle exec rake release
 ```
 
-## Using gem-release rake tasks
+## Using gem-release gem extension
 Using [gem-release](https://github.com/svenfuchs/gem-release):
 ```console
 $ gem bump --push --version minor
