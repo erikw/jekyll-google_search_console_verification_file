@@ -101,7 +101,7 @@ $ bundle exec rake release
 ## Using gem-release gem extension
 Using [gem-release](https://github.com/svenfuchs/gem-release):
 ```console
-$ vi CHANGELOG.md
+$ vi CHANGELOG.md && git add CHANGELOG.md && git commit -m "Update CHANGELOG.md" && git push
 $ gem bump --version minor --tag --sign --push --release
 ```
 
