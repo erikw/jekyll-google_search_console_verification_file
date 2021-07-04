@@ -85,6 +85,8 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
   - Optionally restore the original gem include in `Gemfile` or keep building from a branch in the github repo.
 
 ## Releasing
+Instructions for relasing on rubygems.org below. Optionally make a GitHub [release](https://github.com/erikw/jekyll-google_search_console_verification_file/releases) after this for the pushed git tag.
+
 ## Using bundler/gem_tasks rake tasks
 Following instructions from [bundler.io](https://bundler.io/guides/creating_gem.html#releasing-the-gem):
 ```console
