@@ -1,4 +1,5 @@
 # Jekyll Google Search Console Verification File Generator Plugin - UNRELEASED
+[![Gem Version](https://badge.fury.io/rb/jekyll-google_search_console_verification_file.svg)](https://badge.fury.io/rb/jekyll-google_search_console_verification_file)
 [![Travis Build Status](https://img.shields.io/travis/erikw/jekyll-google_search_console_verification_file/main?logo=travis)](https://travis-ci.com/erikw/jekyll-google_search_console_verification_file)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/maintainability)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/maintainability)
 [![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/test_coverage)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/test_coverage)
