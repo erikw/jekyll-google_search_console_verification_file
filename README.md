@@ -84,7 +84,17 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
   - Optionally restore the original gem include in `Gemfile` or keep building from a branch in the github repo.
 
 ## Releasing
+## Using gem bundler/gem_tasks
+```console
+$ vi -p lib/jekyll-google_search_console_verification_file/version.rb CHANGELOG.md
+$ bundle exec rake build
+$ ver=$(ruby -r jekyll-google_search_console_verification_file/version -e 'puts Jekyll::GoogleSearchConsoleVerificationFile::VERSION')
 
+# Optional: test locally by including in another project
+$ gem install pkg/jekyll-google_search_console_verification_file-$ver.gem
+
+$ bundle exec rake release
+```
 
 ## Multi-versions
 * For ruby, just use RVM to switch between supported ruby version specified in `.gemspec`.
