@@ -104,6 +104,7 @@ Using [gem-release](https://github.com/svenfuchs/gem-release):
 $ vi CHANGELOG.md && git add CHANGELOG.md && git commit -m "Update CHANGELOG.md" && git push
 $ gem bump --version minor --tag --sign --push --release
 ```
+For `--version`, use `major|minor|patch` as needed.
 
 ## Multi-versions
 * For ruby, just use RVM to switch between supported ruby version specified in `.gemspec`.
