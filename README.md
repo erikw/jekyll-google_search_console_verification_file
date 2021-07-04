@@ -85,7 +85,8 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
   - Optionally restore the original gem include in `Gemfile` or keep building from a branch in the github repo.
 
 ## Releasing
-## Using gem bundler/gem_tasks
+## Using bundler/gem_tasks rake tasks
+Following instructions from [bundler.io](https://bundler.io/guides/creating_gem.html#releasing-the-gem):
 ```console
 $ vi -p lib/jekyll-google_search_console_verification_file/version.rb CHANGELOG.md
 $ bundle exec rake build
@@ -95,6 +96,12 @@ $ ver=$(ruby -r jekyll-google_search_console_verification_file/version -e 'puts 
 $ gem install pkg/jekyll-google_search_console_verification_file-$ver.gem
 
 $ bundle exec rake release
+```
+
+## Using gem-release rake tasks
+Using [gem-release](https://github.com/svenfuchs/gem-release):
+```console
+$ gem bump --push --version minor
 ```
 
 ## Multi-versions
