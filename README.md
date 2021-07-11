@@ -52,7 +52,7 @@ Note that if you do place a verification file in the root of the source tree, th
      verification_file_code: 47733b3288357e4
    ```
 1. Now just build your site and verify that the verification file now exist!
-   ```bash
+   ```console
    $ bundle exec jekyll build
    $ ls _site/ | grep "google.*\.html"
    google47733b3288357e4.html
