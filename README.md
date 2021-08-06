@@ -155,3 +155,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/erikw/
 
 # License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+# More Jekyll
+Check out my other Jekyll repositories [here](https://github.com/erikw?tab=repositories&q=jekyll-&type=&language=&sort=).
