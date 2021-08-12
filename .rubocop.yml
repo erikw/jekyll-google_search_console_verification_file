@@ -7,7 +7,7 @@ require:
 
 inherit_mode:
   merge:
-    - Exclude
+    - Exclude  # Merge my AllCops.Excllude with default exludes from https://github.com/rubocop/rubocop/blob/master/config/default.yml
 
 AllCops:
   TargetRubyVersion: 3.0
@@ -17,7 +17,7 @@ AllCops:
   Exclude:
   # Travis: during build there will be a lot of rubocop config files in this pat which will cause build failure as the refer to gems which are not installed by this project.
   # See https://github.com/rubocop/rubocop/issues/9832
-  #- gemfiles/vendor/bundle/**/*
+  - gemfiles/vendor/bundle/**/*
 
 Gemspec/DateAssignment:
   Enabled: true
