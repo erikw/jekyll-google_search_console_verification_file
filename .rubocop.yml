@@ -5,6 +5,10 @@ require:
   - rubocop-rake
   - rubocop-rspec
 
+inherit_mode:
+  merge:
+    - Exclude
+
 AllCops:
   TargetRubyVersion: 3.0
   Include:
@@ -13,7 +17,7 @@ AllCops:
   Exclude:
   # Travis: during build there will be a lot of rubocop config files in this pat which will cause build failure as the refer to gems which are not installed by this project.
   # See https://github.com/rubocop/rubocop/issues/9832
-  - gemfiles/vendor/bundle/**/*
+  #- gemfiles/vendor/bundle/**/*
 
 Gemspec/DateAssignment:
   Enabled: true
