@@ -1,4 +1,4 @@
-# Jekyll Google Search Console Verification File Generator Plugin
+# Jekyll Google Search Console Verification File Generator Plugin [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Generate a Google Search Console verification file for your Jekyll site with this plugin&url=https://github.com/erikw/jekyll-google_search_console_verification_file&via=erik_westrup&hashtags=jekyll,plugin)
 [![Gem Version](https://badge.fury.io/rb/jekyll-google_search_console_verification_file.svg)](https://badge.fury.io/rb/jekyll-google_search_console_verification_file)
 [![Gem Downloads](https://ruby-gem-downloads-badge.herokuapp.com/jekyll-google_search_console_verification_file?color=brightgreen&type=total&label=gem%20downloads)](https://rubygems.org/gems/jekyll-google_search_console_verification_file)
 [![Travis Build Status](https://img.shields.io/travis/erikw/jekyll-google_search_console_verification_file/main?logo=travis)](https://travis-ci.com/erikw/jekyll-google_search_console_verification_file)
