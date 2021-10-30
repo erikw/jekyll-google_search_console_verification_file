@@ -1,0 +1,27 @@
+# Site settings
+title:  jekyll-google_search_console_verification_file Live Demo
+description: >- # this means to ignore newlines until "baseurl:"
+  Demo of the erikw/jekyll-google_search_console_verification_file Jekyll plugin
+baseurl: ""
+url: "https://erikw.github.io/jekyll-google_search_console_verification_file"
+github_username:  erikw
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+
+header_pages: [null] # Remove about.md menu time
+
+exclude:
+  - bin/
+  - Rakefile
+  - Gemfile*
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-google_search_console_verification_file
+
+google_search_console:
+  verification_file_code: 1234
