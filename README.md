@@ -6,6 +6,7 @@
 [![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/test_coverage)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/test_coverage)
 
 
+:point_right: **Live demo**: https://erikw.github.io/jekyll-google_search_console_verification_file/
 
 
 This is a very simple plugin that will generate a Google Search Console (GSC from here) [verification file](https://support.google.com/webmasters/answer/9008080?hl=en) to your `_site/` directory in a Jekyll project. This file is used by GSC to verify that you own the site and looks for example like my [googlef47733b3288357e4.html](https://erikw.me/google47733b3288357e4.html).
