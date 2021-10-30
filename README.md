@@ -1,4 +1,4 @@
-# jekyll-4.x.x-test Live Demo
+# Live Demo
 Deployed at https://erikw.github.io/jekyll-google_search_console_verification_file/
 
 # Deployment
