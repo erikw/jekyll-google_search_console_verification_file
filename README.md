@@ -5,7 +5,8 @@
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/maintainability)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/maintainability)
 [![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/test_coverage)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/test_coverage)
 [![SLOC](https://img.shields.io/tokei/lines/github/erikw/jekyll-google_search_console_verification_file)](#)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE.txt)
+[![License](https://img.shields.io/github/license/erikw/jekyll-google_search_console_verification_file)](LICENSE.txt)
+
 
 
 :point_right: **Live demo**: https://erikw.github.io/jekyll-google_search_console_verification_file/
