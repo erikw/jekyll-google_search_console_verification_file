@@ -6,6 +6,7 @@
 [![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/test_coverage)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/test_coverage)
 [![SLOC](https://img.shields.io/tokei/lines/github/erikw/jekyll-google_search_console_verification_file)](#)
 [![License](https://img.shields.io/github/license/erikw/jekyll-google_search_console_verification_file)](LICENSE.txt)
+[![OSS Lifecycle](https://img.shields.io/osslifecycle/erikw/jekyll-google_search_console_verification_file)](https://github.com/Netflix/osstracker)
 
 
 
