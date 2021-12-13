@@ -15,10 +15,8 @@ plugins:
     config:
       languages:
       - ruby
-      - javascript
 ratings:
   paths:
   - "**.rb"
-  - "**.js"
 exclude_paths:
 - script/
