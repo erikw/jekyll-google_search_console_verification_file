@@ -36,13 +36,14 @@ Thus, this plugin exist to solve this problem. Give the plugin the unique code G
 Note that if you do place a verification file in the root of the source tree, this will override the generation by this plugin.
 
 # Installation
-1. Add this gem to your Jekyll site's Gemfile
-   - Simply with `$ bundle add jekyll-google-search-console-verification-file` when standing in the Jekyll project
-   - Or manually by adding to `Gemfile`
+1. Add this gem to your Jekyll site's Gemfile in the `:jekyll_plugins` group:
    ```ruby
-     gem 'jekyll-google-search-console-verification-file'
+     group :jekyll_plugins do
+       [...]
+       gem 'jekyll-google-search-console-verification-file'
+     end
    ```
-   and then running `$ bundle install`.
+   and then run `$ bundle install`.
 1. In your site's `_config.yml`, enable the plugin:
    ```yml
    plugins:
