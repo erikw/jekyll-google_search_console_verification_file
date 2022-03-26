@@ -39,20 +39,20 @@ Note that if you do place a verification file in the root of the source tree, th
 1. Add this gem to your Jekyll site's Gemfile in the `:jekyll_plugins` group:
    * On CLI (in project root directory):
    ```console
-   $ bundle add --group jekyll_plugins jekyll-google-search-console-verification-file
+   $ bundle add --group jekyll_plugins jekyll-google_search_console_verification_file
    ```
    * Or manually:
    ```ruby
    group :jekyll_plugins do
      [...]
-     gem 'jekyll-google-search-console-verification-file'
+     gem 'jekyll-google_search_console_verification_file'
    end
    ```
 1. Run `$ bundle install`.
 1. In your site's `_config.yml`, enable the plugin:
    ```yml
    plugins:
-     - jekyll-google-search-console-verification-file
+     - jekyll-google_search_console_verification_file
    ```
 1. Get the GSC unique code for you website.
    1. Register your website at [Google Search Console](https://search.google.com/search-console?resource_id=https://erikw.me/)
