@@ -2,6 +2,6 @@
 
 RSpec.describe Jekyll::GoogleSearchConsoleVerificationFile do
   it "has a version number" do
-    expect(Jekyll::GoogleSearchConsoleVerificationFile::VERSION).not_to be nil
+    expect(Jekyll::GoogleSearchConsoleVerificationFile::VERSION).not_to be_nil
   end
 end
