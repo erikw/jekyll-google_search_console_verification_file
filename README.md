@@ -38,8 +38,8 @@ Note that if you do place a verification file in the root of the source tree, th
 # Installation
 1. Add this gem to your Jekyll site's Gemfile in the `:jekyll_plugins` group:
    * On CLI (in project root directory):
-   ```console
-   $ bundle add --group jekyll_plugins jekyll-google_search_console_verification_file
+   ```shell
+   bundle add --group jekyll_plugins jekyll-google_search_console_verification_file
    ```
    * Or manually:
    ```ruby
@@ -102,22 +102,22 @@ Instructions for releasing on rubygems.org below. Optionally make a GitHub [rele
 
 ## Using bundler/gem_tasks rake tasks
 Following instructions from [bundler.io](https://bundler.io/guides/creating_gem.html#releasing-the-gem):
-```console
-$ vi -p lib/jekyll-google_search_console_verification_file/version.rb CHANGELOG.md
-$ bundle exec rake build
-$ ver=$(ruby -r jekyll-google_search_console_verification_file/version -e 'puts Jekyll::GoogleSearchConsoleVerificationFile::VERSION')
+```shell
+vi -p lib/jekyll-google_search_console_verification_file/version.rb CHANGELOG.md
+bundle exec rake build
+ver=$(ruby -r jekyll-google_search_console_verification_file/version -e 'puts Jekyll::GoogleSearchConsoleVerificationFile::VERSION')
 
 # Optional: test locally by including in another project
-$ gem install pkg/jekyll-google_search_console_verification_file-$ver.gem
+gem install pkg/jekyll-google_search_console_verification_file-$ver.gem
 
-$ bundle exec rake release
+bundle exec rake release
 ```
 
 ## Using gem-release gem extension
 Using [gem-release](https://github.com/svenfuchs/gem-release):
-```console
-$ vi CHANGELOG.md && git add CHANGELOG.md && git commit -m "Update CHANGELOG.md" && git push
-$ gem bump --version minor --tag --push --release --sign
+```shell
+vi CHANGELOG.md && git add CHANGELOG.md && git commit -m "Update CHANGELOG.md" && git push
+gem bump --version minor --tag --push --release --sign
 ```
 For `--version`, use `major|minor|patch` as needed.
 
@@ -125,18 +125,18 @@ For `--version`, use `major|minor|patch` as needed.
 * For ruby, just use RVM to switch between supported ruby version specified in `.gemspec`.
 * To run with different jekyll versions, [Appraisal](https://github.com/thoughtbot/appraisal) is used with [`Appraisals`](Appraisals) to generate different [`gemfiles/`](gemfiles/)
    - To use a specific Gemfile, run like
-      ```console
-      $ BUNDLE_GEMFILE=gemfiles/jekyll_4.x.x.gemfile bundle exec rake spec
-      $ bundle exec appraisal jekyll-4.x.x rake spec
+      ```shell
+      BUNDLE_GEMFILE=gemfiles/jekyll_4.x.x.gemfile bundle exec rake spec
+      bundle exec appraisal jekyll-4.x.x rake spec
       ```
    - To run `rake spec` for all gemfiles:
-      ```console
-      $ bundle exec appraisal rake spec
+      ```shell
+      bundle exec appraisal rake spec
       ```
    - To generate new/updated gemfiles from `Appraisals`
-      ```console
-      $ bundle exec appraisal install
-      $ bundle exec appraisal generate --travis
+      ```shell
+      bundle exec appraisal install
+      bundle exec appraisal generate --travis
       ```
 
 ## Travis
@@ -146,20 +146,20 @@ To use the [travis cli client](https://github.com/travis-ci/travis.rb) (installe
    - create a new token named `travis-cli`
    - Set the scopes `repo`, `read:org`, `user:email` according to the [docs](https://docs.travis-ci.com/user/github-oauth-scopes).
 1. Set travis.com as the default so we don't need to add `--pro` to most commands
-   ```console
-   $ bundle exec travis endpoint --set-default --api-endpoint https://api.travis-ci.com/
+   ```shell
+   bundle exec travis endpoint --set-default --api-endpoint https://api.travis-ci.com/
    ```
 1. Login with the cli client
-   ```console
-   $ bundle exec travis login --github-token $GITHUB_TOKEN
+   ```shell
+   bundle exec travis login --github-token $GITHUB_TOKEN
    ```
 1. Now the cli client can be used (might need `--pro` to use travis.com)
-   ```console
-   $ bundle exec travis lint
-   $ bundle exec travis accounts
-   $ bundle exec travis status
-   $ bundle exec travis branches
-   $ bundle exec travis monitor
+   ```shell
+   bundle exec travis lint
+   bundle exec travis accounts
+   bundle exec travis status
+   bundle exec travis branches
+   bundle exec travis monitor
    ```
 
 # Contributing
