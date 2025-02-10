@@ -63,7 +63,7 @@ RSpec.describe Jekyll::GoogleSearchConsoleVerificationFile::Generator do
     end
     let(:code) { site.config["google_search_console"]["verification_file_code"] }
     let(:ver_file_gen) { dest_dir("google#{code}.html") }
-    let(:ver_file_from_src) { dest_dir("google999f1xtur3.html") }  # In the spec/fixtures/override/
+    let(:ver_file_from_src) { dest_dir("google999f1xtur3.html") } # In the spec/fixtures/override/
 
     it "don't generate a new verification file" do
       expect(File.exist?(ver_file_gen)).to be false
