@@ -5,7 +5,7 @@
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/maintainability)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/maintainability)
 [![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/59050f3f66ed1f1ee32e/test_coverage)](https://codeclimate.com/github/erikw/jekyll-google_search_console_verification_file/test_coverage)
 [![CodeQL](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/codeql-analysis.yml)
-[![SLOC](https://sloc.xyz/github/erikw/jekyll-google_search_console_verification_file)](#)
+[![SLOC](https://sloc.xyz/github/erikw/jekyll-google_search_console_verification_file?lower=true)](#)
 [![Number of programming languages used](https://img.shields.io/github/languages/count/erikw/jekyll-google_search_console_verification_file)](#)
 [![Top programming languages used](https://img.shields.io/github/languages/top/erikw/jekyll-google_search_console_verification_file)](#)
 [![License](https://img.shields.io/github/license/erikw/jekyll-google_search_console_verification_file)](LICENSE.txt)
