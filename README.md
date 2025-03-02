@@ -138,7 +138,7 @@ For `--version`, use `major|minor|patch` as needed.
    - To generate new/updated gemfiles from `Appraisals`
       ```shell
       bundle exec appraisal install
-      bundle exec appraisal generate --travis
+      bundle exec appraisal generate
       ```
 
 ## Travis
