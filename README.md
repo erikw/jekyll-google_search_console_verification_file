@@ -11,7 +11,10 @@
 [![License](https://img.shields.io/github/license/erikw/jekyll-google_search_console_verification_file)](LICENSE.txt)
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/erikw/jekyll-google_search_console_verification_file)](https://github.com/Netflix/osstracker)
 
-
+<p align="center">
+    <!-- Ref: https://dev.to/azure/adding-a-github-codespace-button-to-your-readme-5f6l -->
+    <a href="https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=381051146" title="Open in GitHub Codespaces" ><img alt="Open in GitHub Codespaces" src="https://github.com/codespaces/badge.svg"></a>
+</p>
 
 :point_right: **Live demo**: https://erikw.github.io/jekyll-google_search_console_verification_file/
 
