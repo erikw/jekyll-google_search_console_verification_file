@@ -106,7 +106,7 @@ Following the setup at [how-to-specify-local-ruby-gems-in-your-gemfile](https://
 ## Releasing
 Instructions for releasing on rubygems.org below. Optionally make a GitHub [release](https://github.com/erikw/jekyll-google_search_console_verification_file/releases) after this for the pushed git tag.
 
-## Using bundler/gem_tasks rake tasks
+## [manual] Using bundler/gem_tasks rake tasks
 Following instructions from [bundler.io](https://bundler.io/guides/creating_gem.html#releasing-the-gem):
 ```shell
 vi -p lib/jekyll-google_search_console_verification_file/version.rb CHANGELOG.md
@@ -119,10 +119,11 @@ gem install pkg/jekyll-google_search_console_verification_file-$ver.gem
 bundle exec rake release
 ```
 
-## Using gem-release gem extension
+## [recommended] Using gem-release gem extension
 Using [gem-release](https://github.com/svenfuchs/gem-release):
 ```shell
 vi CHANGELOG.md && git add CHANGELOG.md && git commit -m "Update CHANGELOG.md" && git push
+gem signin
 gem bump --version minor --tag --push --release --sign
 ```
 For `--version`, use `major|minor|patch` as needed.
