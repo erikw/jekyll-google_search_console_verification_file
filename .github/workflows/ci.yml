@@ -1,0 +1,47 @@
+name: Continuous Integration
+
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        ruby: [2.7.0, 3.0.1]
+        gemfile:
+          - gemfiles/jekyll_3.7.x.gemfile
+          - gemfiles/jekyll_4.x.x.gemfile
+
+    env:
+      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
+      #CC_TEST_REPORTER_ID: 9a84a9f695de3b120b6fcead4e089b45420f7518fb2123dc5424f862d381c4ff
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          bundler: 2.2.18
+
+      #- name: Download Code Climate test reporter
+      #  run: |
+      #    curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > cc-test-reporter
+      #    chmod +x cc-test-reporter
+      #    ./cc-test-reporter before-build
+
+      - name: Run tests
+        run: bundle exec rake spec rubocop
+
+      #- name: Upload coverage to Code Climate
+      #  if: always()
+      #  run: ./cc-test-reporter after-build --exit-code ${{ job.status == 'success' && 0 || 1 }}
