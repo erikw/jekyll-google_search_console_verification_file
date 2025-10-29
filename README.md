@@ -147,29 +147,6 @@ For `--version`, use `major|minor|patch` as needed.
       bundle exec appraisal generate
       ```
 
-## Travis
-To use the [travis cli client](https://github.com/travis-ci/travis.rb) (installed from `Gemfile`):
-1. Get a GitHub OAuth token by
-   - going to [github.com/settings/tokens](https://github.com/settings/tokens)
-   - create a new token named `travis-cli`
-   - Set the scopes `repo`, `read:org`, `user:email` according to the [docs](https://docs.travis-ci.com/user/github-oauth-scopes).
-1. Set travis.com as the default so we don't need to add `--pro` to most commands
-   ```shell
-   bundle exec travis endpoint --set-default --api-endpoint https://api.travis-ci.com/
-   ```
-1. Log in with the CLI client
-   ```shell
-   bundle exec travis login --github-token $GITHUB_TOKEN
-   ```
-1. Now the cli client can be used (might need `--pro` to use travis.com)
-   ```shell
-   bundle exec travis lint
-   bundle exec travis accounts
-   bundle exec travis status
-   bundle exec travis branches
-   bundle exec travis monitor
-   ```
-
 # Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/erikw/jekyll-google_search_console_verification_file.
 
