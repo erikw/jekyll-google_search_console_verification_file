@@ -6,10 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-
 ### Changed
-- Updated format of this file
-- Bump ruby to 3.0.2 from 3.0.1
+- Updated format of this file.
+- Bump ruby to 3.0.2 from 3.0.1.
+- Migrated CI from Travis to GitHub Actions.
 
 ## [1.0.1] - 2021-08-18
 ### Fixed
