@@ -9,18 +9,13 @@ on:
 
 jobs:
   test:
-    #runs-on: ubuntu-20.04 # For stability
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        # TODO enable all matrix combinations when first works
-        #ruby: [2.7.0, 3.0.1]
-        #gemfile:
-        #  - gemfiles/jekyll_3.7.x.gemfile
-        #  - gemfiles/jekyll_4.x.x.gemfile
-        ruby: [3.0.1]
+        ruby: [2.7.0, 3.0.1]
         gemfile:
+          - gemfiles/jekyll_3.7.x.gemfile
           - gemfiles/jekyll_4.x.x.gemfile
 
     env:
