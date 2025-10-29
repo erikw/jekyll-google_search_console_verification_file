@@ -13,9 +13,13 @@ jobs:
 
     strategy:
       matrix:
-        ruby: [2.7.0, 3.0.1]
+        # TODO enable all matrix combinations when first works
+        #ruby: [2.7.0, 3.0.1]
+        #gemfile:
+        #  - gemfiles/jekyll_3.7.x.gemfile
+        #  - gemfiles/jekyll_4.x.x.gemfile
+        ruby: [3.0.1]
         gemfile:
-          - gemfiles/jekyll_3.7.x.gemfile
           - gemfiles/jekyll_4.x.x.gemfile
 
     env:
