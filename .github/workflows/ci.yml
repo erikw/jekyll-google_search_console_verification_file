@@ -38,8 +38,6 @@ jobs:
           bundler-cache: true
           bundler: 2.2.18
 
-          # TODO migrate to the new way of reporting qlty scores
-
       - name: Run tests
         run: bundle exec rake spec
 
