@@ -40,7 +40,10 @@ jobs:
       #    ./cc-test-reporter before-build
 
       - name: Run tests
-        run: bundle exec rake spec rubocop
+        run: bundle exec rake spec
+
+      - name: Run linting
+        run: bundle exec rake rubocop
 
       #- name: Upload coverage to Code Climate
       #  if: always()
