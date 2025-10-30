@@ -4,6 +4,7 @@
 [![Continuous Integration](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/ci.yml/badge.svg)](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/ci.yml)
 [![Continuous Deployment](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/cd.yml/badge.svg)](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/cd.yml)
 [![CodeQL](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/codeql-analysis.yml)
+[![pages-build-deployment](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/erikw/jekyll-google_search_console_verification_file/actions/workflows/pages/pages-build-deployment)
 [![Code Climate Maintainability](https://qlty.sh/gh/erikw/projects/jekyll-google_search_console_verification_file/maintainability)](https://qlty.sh/gh/erikw/projects/jekyll-google_search_console_verification_file)
 [![Code Climate Test Coverage](https://qlty.sh/gh/erikw/projects/jekyll-google_search_console_verification_file/test_coverage)](https://qlty.sh/gh/erikw/projects/jekyll-google_search_console_verification_file)
 [![SLOC](https://sloc.xyz/github/erikw/jekyll-google_search_console_verification_file?lower=true)](#)
