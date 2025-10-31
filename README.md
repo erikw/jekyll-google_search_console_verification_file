@@ -31,7 +31,6 @@ Why use this plugin?
 * Don't stuff bloating `<meta>` tag to all your HTML pages; use simple file in the site's root
 * Generate what can be generated; keep your source tree clean!
 
-
 ### !TL;DidRead
 There are multiple ways to [verify](https://support.google.com/webmasters/answer/9008080?hl=en) the ownership of your site. The two simpler ways, both suitable for GitHub Pages owners, are to add a `<meta> tag to your pages` or upload a special, unique file to the root of the site. For adding the meta tag, there are excellent plugins making this very easy, for example [jekyll-seo-tag](http://jekyll.github.io/jekyll-seo-tag/usage/). If you want the meta tag, I recommend this plugin.
 
